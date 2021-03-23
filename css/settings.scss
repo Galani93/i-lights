@@ -1,0 +1,56 @@
+$basic-font: 'Montserrat', sans-serif;
+
+
+$color-1:#535353;
+$color-2: #FFC94F;
+$color-3: #0C0537;
+$color-4: #EFEFEF;
+$color-5:#3D4F64;
+$color-6:#8C8C8C;
+
+$text-size-1: 12px;
+$text-size-2: 13px;
+$text-size-3: 16px;
+$width:45px;
+
+$footer-height:80px;
+$header-height:70px;
+
+$header-color: #40454a;
+$section-color:rgb(8, 10, 43);
+$footer-color: #4e555b;
+
+$radius:4px;
+$rotate: rotate(45deg);
+
+@mixin dot{
+    width: 16px;
+    height: 16px;
+}
+
+@mixin display-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@mixin display-flex-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin display-flex-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@mixin display-flex-4{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
