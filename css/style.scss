@@ -619,13 +619,202 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
   }
 }
+.section-files{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-files-title{
+  background-image: url("../img/files-icon.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 133px;
+  height: 133px;
+  position: relative;
+  z-index: 20;
+  h2{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 128px;
+    position: relative;
+    width: 300px;
+    margin-left: 50px;
+    z-index: 30;
+    color: #505050;
 
+  }
+}
+.catalog-files{
+  display: flex;
+flex-direction: column;
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EFEFEF;
+  }
 
+}
+.look-files{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  .look{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 45px;
+    color: #656565;
+    margin: 0 10px;
+  }
+  .download{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    color: #656565;
+    margin: 0 10px;
+    img{
+      width: 21px;
+      height: 21px;
+      margin: 0 10px;
+    }
+  }
+}
 
+.landing_nav {
+  position: fixed;
+  bottom: 0;
+  transform: translateY(-50%);
+  right: 300px;
+  list-style: none;
+  z-index: 100;
+}
+.landing_nav li a {
+  position: relative;
+  text-align: right;
+  display: block;
+  margin: 10px;
+  color: transparent;
+}
+.landing_nav li:hover a, .landing_nav li.active a {
+  color: white;
+  visibility: hidden;
+  text-decoration: none;
 
+}
+.landing_nav li.active a:after, .landing_nav li:hover a:after {
+  background: #FFC94F;
+  transition: all 0.3s;
+  color: white;
+}
+.landing_nav li a:after {
+  content: "";
+  display: block;
+  background: white;
+  width: 3px;
+  height: 36px;
+  cursor: pointer;
+  right: -10px;
+  position: absolute;
+  top: 0;
+}
+.section-questions{
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
+}
+.section-questions-title{
+  background-image: url("../img/questions-icon.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 133px;
+  height: 133px;
+  position: relative;
+  z-index: 20;
+  h2{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 140px;
+    position: relative;
+    margin-left: 50px;
+    z-index: 30;
+    width: 500px;
+    color: #505050;
+  }
+  }
+.form-control {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #dddee0;
+  -webkit-transition: border-color 0s ease-out;
+  transition: border-color 0s ease-out;
+  background-color: #fff;
+  padding: 10px 0;
+}
+.catalog-questions{
+  margin-top: 80px;
 
+  .btn{
+    width: 214px;
+    height: 44px;
+    background: #FFC94F;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #464855;
+    margin: 40px 0;
+    float: right;
+  }
+}
+.footer{
+  background: #3D4F64;
+  padding: 40px 0;
+
+  .foo-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 5px 0;
+  }
+
+  .footer-item {
+    a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 24px;
+      color: #FFFFFF;
+      padding: 8px 0;
+
+      &:hover {
+        text-decoration-line: underline!important;
+        color: $color-2;
+      }
+
+      i{
+        color: $color-2;
+        font-size: 16px;
+        margin: 0 8px;
+      }
+    }
+  }
+}
+.copy{
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin: 24px 0;
+}
 
 
 
@@ -656,7 +845,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /*******************************      MD       ***********************/
 
 @media screen and (max-width: 992px) {
+  .catalog{
+  flex-wrap: wrap;
+  }
+.item-img{
+  img{
+    width: 100%;
+    height: auto;
+  }
 
+}
 }
 
 /*******************************      SM       ***********************/
