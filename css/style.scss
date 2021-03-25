@@ -194,6 +194,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       color: #535353;
       transition: all 0.3s;
 
+
       &:hover {
         border: 1px solid $color-2;
         background: transparent;
@@ -563,15 +564,30 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   }
   .details{
     display: flex;
+
     .details-btn{
-      width: 245px;
-      height: 55px;
       background: #3D4F64;
       border-radius: 0 0 0 2px;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 45px;
-      color: #FFFFFF;
+      transition: all 0.3s;
+      a{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 50px;
+        color: #FFFFFF;
+        text-align: center;
+        display: flex;
+        padding: 0 80px;
+        justify-content: center;
+      }
+
+      &:hover {
+        border: 1px solid #3D4F64;
+        background: transparent;
+
+        a{
+          color: #3D4F64;
+        }
+      }
     }
     .plus-btn{
       width:73px;
@@ -648,7 +664,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .catalog-files{
   display: flex;
-flex-direction: column;
+  flex-direction: column;
+  position: relative;
   .row{
     display: flex;
     justify-content: space-between;
@@ -815,6 +832,295 @@ flex-direction: column;
   color: #FFFFFF;
   margin: 24px 0;
 }
+
+
+
+
+/*******************************      COMPANY    ***********************/
+.breadcrumb-item+.breadcrumb-item::before {
+  float: left;
+  padding-right: .5rem;
+  color: #6c757d;
+  content: "-";
+}
+.breadcrumb{
+background: transparent;
+  .breadcrumb-item{
+    margin: 17px 0;
+    a{
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: #7C7C7C;
+    }
+  }
+}
+
+.page-title-box{
+  margin: 38px auto 45px;
+
+  h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    color: #535353;
+  }
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background: #3D4F64;
+  border-radius: 2px 2px 0px 2px;
+}
+ul.nav.nav-pills.nav-justified {
+  border-bottom: 1px solid #EDEDED;
+}
+.nav-link {
+  border-radius: .25rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  color: #535353;
+}
+.text_muted{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #535353;
+}
+.solutions{
+  margin-bottom: 50px;
+  .nav-link{
+    text-align: left;
+    i{
+      float: right;
+      line-height: 40px;
+    }
+  }
+  .header-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 40px;
+    color: #535353;
+    margin: 20px 0;
+  }
+  .solutions-img{
+    display: flex;
+    flex-direction: column;
+    .solutions-img-1{
+      width: 100%;
+      height: 316px;
+      background: rgba(0, 0, 0, 0.9);
+      margin-bottom: 20px;
+    }
+    .solutions-img-2{
+      display: flex;
+      justify-content: space-between;
+
+      .img-1{
+        width: 306px;
+        height: 148px;
+        background: rgba(117, 63, 63, 0.9);
+
+        &:nth-child(2n){
+          margin: 0 20px;
+        }
+      }
+    }
+
+  }
+}
+/*******************************      Services   ***********************/
+.services{
+  a.nav-link{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 20px;
+    border-left: 1px solid #EDEDED;
+    min-height: 100px;
+  }
+}
+/*******************************      Catalog   ***********************/
+.catalog-bloc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .catalog-item {
+    border-radius: 2px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    margin:10px;
+    transition: all 0.3s;
+
+
+    .catalog-link {
+      padding: 10px 20px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 40px;
+      color: #535353;
+
+    }
+
+    &:hover{
+      background: #3D4F64;
+      box-shadow: 0 0 15px rgba(255, 201, 79, 0.3);
+      border-radius: 2px;
+      .catalog-link{
+        color: #FFFFFF;
+      }
+    }
+
+  }
+  .catalog-item.active{
+    background: #3D4F64;
+    box-shadow: 0 0 15px rgba(255, 201, 79, 0.3);
+    border-radius: 2px;
+    .catalog-link{
+      color: #FFFFFF;
+    }
+  }
+}
+.filter{
+  width: 302px;
+  height: 413px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  margin-top: 32px;
+}
+.range-wrap {
+  position: relative;
+  margin: 0 auto 3rem;
+}
+.range {
+  width: 100%;
+  height: 1px;
+  background:  #FFC94F!important;
+  color:#FFC94F!important ;
+  margin-top: 40px;
+
+}
+.bubble {
+  color:  #3D4F64;
+  padding: 4px 12px;
+  position: absolute;
+  border-radius: 4px;
+  left: 0;
+  top: 19px;
+  transform: translateX(-50%);
+}
+
+.page-nation {
+  display: flex;
+  justify-content: center;
+  margin: 21px auto;
+
+  .page-item {
+    margin: 12px;
+    width: 24px;
+    height: 24px;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    .page-link {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #464855;
+      border: 0;
+      padding: 0;
+      background: transparent;
+
+    }
+
+    &:hover {
+
+      .page-link {
+        font-weight: bold;
+        background: #FFC94F;
+      }
+    }
+
+
+  }
+}
+/*******************************      Card Product   ***********************/
+.item-list{
+  margin: 30px 0;
+  span{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  .list-item {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    padding-top: 15px;
+    list-style-type: disc !important;
+
+    &::marker {
+      background-color: #FFC94F;
+      color: #FFC94F;
+    }
+  }
+}
+.table-bloc{
+  .header-title{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px;
+    color: #535353;
+    span{
+      font-weight: normal;
+      margin-left: 20px;
+    }
+  }
+
+}
+.table{
+  thead{
+    background: #F9F9F9;
+    tr{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #535353;
+
+    }
+  }
+  tbody{
+    tr{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #8C8C8C;
+    }
+
+  }
+}
+.table td, .table th {
+  text-align: center;
+  vertical-align: top;
+}
+
+
+
+
+
 
 
 
