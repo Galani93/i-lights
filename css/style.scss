@@ -870,7 +870,7 @@ background: transparent;
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff;
   background: #3D4F64;
-  border-radius: 2px 2px 0px 2px;
+  border-radius: 2px 2px 0 2px;
 }
 ul.nav.nav-pills.nav-justified {
   border-bottom: 1px solid #EDEDED;
@@ -1185,17 +1185,20 @@ ul.nav.nav-pills.nav-justified {
   width: 100%;
   height: 175px;
   background: #FFFFFF;
-  box-shadow: 0px 4px 10px rgba(243, 168, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(243, 168, 0, 0.2);
   margin: 15px 0;
 }
-.selected-icon{
-  width: 82px;
-  height: 82px;
-  margin-left: 18px;
-  img{
+.product {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 40px;
+  color: #000000;
 
-    width: 100%;
-    height: 100%;
+}
+.selected-icon{
+  img{
+    width: 82px;
+    height: 82px;
 
 
   }
@@ -1214,7 +1217,8 @@ ul.nav.nav-pills.nav-justified {
 .description {
   margin-top: 15px;
 
-  ul {
+  .description-item {
+    padding: 0 10px;
     li {
       font-weight: normal;
       font-size: 14px;
@@ -1224,19 +1228,12 @@ ul.nav.nav-pills.nav-justified {
 
     }
 
+    &:first-child {
 
+      border-right: 1px solid #E5E5E5;
+    }
   }
-  .col{
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
-    color: #505050;
-    padding: 2px 0;
-  }
-  .col:first-child{
-    padding: 0 10px;
-    border-right: 1px solid #E5E5E5;
-  }
+
 }
 
 .selected-quantity{
