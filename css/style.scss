@@ -1282,12 +1282,69 @@ ul.nav.nav-pills.nav-justified {
   }
 }
 
+.btn.post{
+    width: 313px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #3D4F64;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3D4F64;
+    transition: all 0.3s;
+     margin: 18px 8px;
+
+    &:hover {
+      border: 1px solid $color-2;
+    }
+  }
 
 
 
 
+.btn.payment{
+    width: 313px;
+    height: 44px;
+    background: #FFC94F;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3D4F64;
+  margin: 18px 8px;
+    transition: all 0.3s;
+
+    &:hover {
+      border: 1px solid $color-2;
+      background: transparent;
+    }
+  }
+
+.shopping-bloc {
+  a{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 40px;
+    color: #535353;
+    i{
+      font-size: 14px;
+      line-height: 40px;
+      color: #535353;
+    }
+  }
 
 
+}
+
+.total{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 40px;
+  color: #535353;
+
+
+}
 
 
 
