@@ -975,15 +975,68 @@ ul.nav.nav-pills.nav-justified {
 
 .filter {
   width: 302px;
-  height: 413px;
+  height: 460px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   margin-top: 32px;
 }
+.filter .btn.button {
+  box-sizing: border-box;
+  width: 117px;
+  height: 31px;
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+  margin: 25px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 31px;
+  color: #535353;
+  padding: 0;
+}
+.filter .btn.submit {
+  width: 117px;
+  height: 31px;
+  background: #FFC94F;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin: 25px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 31px;
+  color: #535353;
+  padding: 0;
+}
+
+.filterItem-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 40px;
+  color: #535353;
+  padding: 5px 0;
+}
+
+.filter-title-bloc {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter-title-bloc h4 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 40px;
+  color: #535353;
+}
+.filter-title-bloc span {
+  float: right;
+}
+.filter-title-bloc span i {
+  color: #FFC94F;
+  font-size: 16px;
+}
 
 .range-wrap {
   position: relative;
-  margin: 0 auto 3rem;
 }
 
 .range {
@@ -991,7 +1044,7 @@ ul.nav.nav-pills.nav-justified {
   height: 1px;
   background: #FFC94F !important;
   color: #FFC94F !important;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .bubble {
@@ -999,8 +1052,8 @@ ul.nav.nav-pills.nav-justified {
   padding: 4px 12px;
   position: absolute;
   border-radius: 4px;
-  left: 0;
-  top: 19px;
+  left: 10px;
+  top: -3px;
   transform: translateX(-50%);
 }
 
