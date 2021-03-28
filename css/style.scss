@@ -1409,6 +1409,17 @@ ul.nav.nav-pills.nav-justified {
     right: 10px;
     background: #C4C4C4;
   }
+  .icon-info-activity-2:before {
+    content: '';
+    height: 1px;
+    border-right: 1px dashed #C4C4C4;
+    position: absolute;
+    color: #C4C4C4;
+    width: 65%;
+    top: 21px;
+    left: -170px;
+    background: #C4C4C4;
+  }
 
 }
 
