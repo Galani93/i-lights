@@ -1174,7 +1174,6 @@ ul.nav.nav-pills.nav-justified {
 .selected-name h4 {
   font-weight: bold;
   font-size: 16px;
-  line-height: 40px;
   color: #535353;
 }
 
@@ -1193,6 +1192,9 @@ ul.nav.nav-pills.nav-justified {
 }
 .description .description-item:first-child {
   border-right: 1px solid #E5E5E5;
+}
+.description .description-item.des-item {
+  border-right: none;
 }
 
 .selected-quantity .input-group .plusminus {
