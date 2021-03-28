@@ -1355,6 +1355,13 @@ ul.nav.nav-pills.nav-justified {
   left: -170px;
   background: #C4C4C4;
 }
+.delivery .text-info {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: #535353 !important;
+  text-decoration: underline !important;
+}
 
 /*******************************      MD       ***********************/
 @media screen and (max-width: 992px) {
