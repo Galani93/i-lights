@@ -1348,48 +1348,120 @@ ul.nav.nav-pills.nav-justified {
   line-height: 40px;
   color: #535353;
 
+}
+.bd-delivery{
+  background-color:rgb(252, 252, 252);
+}
+.delivery{
+
+.activity-info-title{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 40px;
+  color: #535353;
 
 }
+  .activity-info-form{
+    background-color:  #fff;
+    .btn-submit{
+      width: 214px;
+      height: 44px;
+      background: #FFC94F;
+      border-radius: 2px;
+      margin: 0 30px 0 0;
+      outline: none;
+      font-weight: bold;
+      font-size: 14px;
+      color: #464855;
+      transition: all 0.3s;
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*******************************      MD       ***********************/
-
-@media screen and (max-width: 992px) {
-  .catalog{
-  flex-wrap: wrap;
-  }
-.item-img{
-  img{
-    width: 100%;
-    height: auto;
-  }
-
-}
-}
-
-/*******************************      SM       ***********************/
-
-@media screen and (max-width: 768px) {
-  .section-banner {
-    flex-direction:column-reverse;
-
-    div#carouselExampleCaptions , .carousel-inner {
-      height: 184px;
+      &:hover {
+        border: 1px solid $color-2;
+        background: transparent;
+      }
     }
   }
-  .section-slider-text {
-    margin: 70px 10px;
-    position: relative;
+  .activity .activity-info .icon-info-activity .mdi {
+    width: 42px;
+    height: 42px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #535353;
+    font-size: 22px;
+    margin-left: 2px;
+    background: #FFFFFF;
+    border: 1px solid #FFC94F;
+    box-sizing: border-box;
+    box-shadow: 0 8px 10px rgba(255, 201, 79, 0.25);
   }
+  .icon-info-activity-2:after {
+    content: '';
+    height: 1px;
+    border-right: 1px dashed #C4C4C4;
+    position: absolute;
+    color: #C4C4C4;
+    top: 21px;
+    width: 65%;
+    right: 10px;
+    background: #C4C4C4;
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*******************************      MD       ***********************/
+
+  @media screen and (max-width: 992px) {
+    .catalog{
+      flex-wrap: wrap;
+    }
+    .item-img{
+      img{
+        width: 100%;
+        height: auto;
+      }
+
+    }
+  }
+
+  /*******************************      SM       ***********************/
+
+  @media screen and (max-width: 768px) {
+    .section-banner {
+      flex-direction:column-reverse;
+
+      div#carouselExampleCaptions , .carousel-inner {
+        height: 184px;
+      }
+    }
+    .section-slider-text {
+      margin: 70px 10px;
+      position: relative;
+    }
+  }
