@@ -774,63 +774,68 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background-color: #fff;
   padding: 10px 0;
 }
-.catalog-questions{
-  margin-top: 80px;
-
-  .btn{
-    width: 214px;
-    height: 44px;
-    background: #FFC94F;
-    border-radius: 2px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: #464855;
-    margin: 40px 0;
-    float: right;
+.form-control:focus {
+  outline: 0;
+  box-shadow: none!important;
   }
+
+.catalog-questions{
+margin-top: 80px;
+
+.btn{
+  width: 214px;
+  height: 44px;
+  background: #FFC94F;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #464855;
+  margin: 40px 0;
+  float: right;
+}
 }
 .footer{
-  background: #3D4F64;
-  padding: 40px 0;
+background: #3D4F64;
+padding: 40px 0;
 
-  .foo-title{
+.foo-title{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #FFFFFF;
+  padding: 5px 0;
+}
+
+.footer-item {
+  a {
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 30px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
     color: #FFFFFF;
-    padding: 5px 0;
-  }
+    padding: 8px 0;
 
-  .footer-item {
-    a {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 24px;
-      color: #FFFFFF;
-      padding: 8px 0;
+    &:hover {
+      text-decoration-line: underline!important;
+      color: $color-2;
+    }
 
-      &:hover {
-        text-decoration-line: underline!important;
-        color: $color-2;
-      }
-
-      i{
-        color: $color-2;
-        font-size: 16px;
-        margin: 0 8px;
-      }
+    i{
+      color: $color-2;
+      font-size: 16px;
+      margin: 0 8px;
     }
   }
 }
+}
 .copy{
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 18px;
-  color: #FFFFFF;
-  margin: 24px 0;
+font-weight: 500;
+font-size: 11px;
+line-height: 18px;
+color: #FFFFFF;
+margin: 24px 0;
 }
 
 
