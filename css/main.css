@@ -1629,8 +1629,14 @@ ul.nav.nav-pills.nav-justified {
 /*******************************      SM       ***********************/
 @media screen and (max-width: 768px) {
   .section-slider-text {
-    margin: 70px 10px;
+    margin: 42px 10px;
     position: relative;
+  }
+  .section-slider-text .h3-section-title {
+    color: #535353;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .catalog .properties {
@@ -1767,7 +1773,7 @@ ul.nav.nav-pills.nav-justified {
     padding: 40px 10px;
   }
   .footer .footer-item a {
-    font-size: 14px;
+    font-size: 12px;
   }
   .footer .footer-col {
     width: 50%;
@@ -1839,16 +1845,6 @@ ul.nav.nav-pills.nav-justified {
   }
   .section-banner div#carouselExampleCaptions .carousel-inner {
     height: 127px;
-  }
-  .section-banner div#carouselExampleCaptions .section-slider-text {
-    margin: 42px 10px;
-    position: relative;
-  }
-  .section-banner div#carouselExampleCaptions .section-slider-text .h3-section-title {
-    color: #535353;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 32px;
   }
   .section-banner div#carouselExampleCaptions .carousel img {
     object-fit: cover;
