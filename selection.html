@@ -55,7 +55,7 @@
 <div class="content">
     <div class="selected-item">
         <div class="selected-item-1" id="box_285">
-            <div class="row d-flex justify-content-around ">
+            <div class="row product-row d-flex justify-content-around ">
                 <div class="col-auto product">Товар</div>
                 <div class="col-lg-4 product">Описание</div>
                 <div class="col-lg-2 product">Количество</div>
@@ -167,7 +167,7 @@
                     <div class="copy">© Technolight 2015-2021</div>
                 </div>
             </div>
-            <div class="col-md-3 footer-col">
+            <div class="col-md-3">
                 <div class="foo-title">
                     Каталог товаров
                 </div>
@@ -181,7 +181,7 @@
 
 
             </div>
-            <div class="col-md-3 footer-col">
+            <div class="col-md-3">
                 <div class="foo-title">Как заказать</div>
                 <div class="footer-item"><a href="#">Оплата</a></div>
                 <div class="footer-item"><a href="#">  Реквизиты компании</a></div>
@@ -191,43 +191,42 @@
             </div>
             <div class="col-md-3">
                 <div class="foo-title">Контакты</div>
-                <div class="footer-item-contact">
-                    <div class="footer-item"><a href="#"><i class="fas fa-map-marker-alt"></i>место магазина</a></div>
-                    <div class="footer-item"><a href="tel:8 (495) 233 55 57"><i class="fas fa-phone-alt"></i>+7 (495) 233 55 57</a></div>
-                    <div class="footer-item"><a href="mailto:info@i-lights.ru"><i class="far fa-envelope" aria-hidden="true"></i>info@i-lights.ru</a></div>
-                </div>
-
+                <div class="footer-item"><a href="#"><i class="fas fa-map-marker-alt"></i>место магазина</a></div>
+                <div class="footer-item"><a href="tel:8 (495) 233 55 57"><i class="fas fa-phone-alt"></i>+7 (495) 233 55 57</a></div>
+                <div class="footer-item"><a href="mailto:info@i-lights.ru"><i class="far fa-envelope" aria-hidden="true"></i>info@i-lights.ru</a></div>
 
             </div>
         </div>
-        <div class="row">
-            <div class="copy-mob">© Technolight 2015-2021</div>
-        </div>
+
     </div>
 </footer>
 
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-         style="display: none;" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header"><h5 class="modal-title mt-0" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">×</span></button>
+                <div class="modal-header border-0"><h5 class="modal-title mt-0" id="exampleModalLabel">Введите адресс электронной почты</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                 </div>
-                <div class="modal-body"><p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
-                    sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque
-                        nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <div class="modal-body">
+
+                    <div class="form-group row"><label for="example-email-input" class="col-sm-12 col-form-label text-left"></label>
+                        <div class="col-sm-12"><input class="form-control" type="email" value="Ваш e-mail *" id="example-email-input2"></div>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                        <label class="form-check-label" for="exampleCheck1">Даю согласие на обработку персональных данных</label>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer border-0">
+                    <div class="modal-footer border-0">
+                        <button type="submit" class="btn btn-sbm">Отправить</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-   <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      style="display: none;" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content border-0">
@@ -238,22 +237,24 @@
             <div class="modal-body border-0">
                 <div class="form-group row">
                     <label for="example-text-input" class="col-sm-12 col-form-label text-left"></label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-12">
                         <input class="form-control" type="text" value="Ваше имя *" id="example-text-input">
                     </div>
                 </div>
                 <div class="form-group row"><label for="example-email-input" class="col-sm-12 col-form-label text-left"></label>
-                    <div class="col-sm-10"><input class="form-control" type="email" value="Ваш e-mail *" id="example-email-input"></div>
+                    <div class="col-sm-12"><input class="form-control" type="email" value="Ваш e-mail *" id="example-email-input"></div>
                 </div>
                 <div class="form-group row"><label for="example-tel-input" class="col-sm-12 col-form-label text-left"></label>
-                    <div class="col-sm-10"><input class="form-control" type="tel" value="Ваш телефон *" id="example-tel-input"></div>
+                    <div class="col-sm-12"><input class="form-control" type="tel" value="Ваш телефон *" id="example-tel-input"></div>
                 </div>
                 <div class="form-group form-check"><input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Даю согласие на обработку персональных данных</label>
                 </div>
             </div>
             <div class="modal-footer border-0">
-                <button type="submit" class="btn btn-primary">Отправить</button>
+                <div class="modal-footer border-0">
+                    <button type="submit" class="btn btn-sbm">Отправить</button>
+                </div>
             </div>
 
 
