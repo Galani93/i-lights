@@ -1050,6 +1050,7 @@ ul.nav.nav-pills.nav-justified {
       .img-1 {
         width: 306px;
         height: 148px;
+        background: rgba(0, 0, 0, 0.42);
 
         img {
           width: 100%;
@@ -1075,6 +1076,9 @@ ul.nav.nav-pills.nav-justified {
     border-left: 1px solid #EDEDED;
     min-height: 100px;
   }
+}
+.row-mob-solutions{
+  display: none;
 }
 
 /*******************************      Catalog   ***********************/
@@ -1883,7 +1887,9 @@ ul.nav.nav-pills.nav-justified {
     width: 80%;
   }
 }
-
+.arrow-mob {
+  display: none;
+}
 
 /*******************************      MD       ***********************/
 
@@ -2192,16 +2198,16 @@ ul.nav.nav-pills.nav-justified {
   }
   ul.nav.nav-pills.nav-justified {
     flex-direction: column;
+    padding: 0 10px;
 
     a.nav-link {
       text-align: left;
       border-bottom: 1px solid #EDEDED;
-      border-top: 1px solid #EDEDED;
     }
 
   }
   .tab-pane {
-    padding: 0 10px;
+    padding:0 10px;
   }
 
 
@@ -2264,6 +2270,97 @@ ul.nav.nav-pills.nav-justified {
   .filter{
     width: 338px;
     margin: 22px auto;
+  }
+
+
+  /*************** Company *******************/
+  .solutions{
+    .header-title {
+      margin: 20px 10px;
+    }
+
+    .col-sm-9{
+      padding: 0;
+    }
+  }
+  .company {
+    .nav-pills .nav-link.active, .show > .nav-link {
+      color: #3D4F64;
+      background: transparent;
+      border-radius: 2px 2px 0 2px;
+    }
+  }
+
+  .nav-link {
+    padding: 0;
+  }
+
+  .arrow-mob {
+    display: block;
+    float: right;
+    color: #3D4F64;
+    font-size: 16px;
+  }
+  .solutions-img-2 {
+    display: flex;
+    justify-content: space-between;
+
+    .img-1 {
+      width: 107px!important;
+      height: 52px!important;
+      background: rgba(0, 0, 0, 0.42);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  /*************** Services *******************/
+  .services{
+
+    a.nav-link {
+      padding: 10px;
+      border-left: 0;
+      min-height: 86px;
+    }
+
+    .arrow-mob {
+      display: block;
+      float: right;
+      color: #fff;
+      font-size: 16px;
+    }
+    ul.nav.nav-pills.nav-justified a.nav-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .row-desktop-solutions{
+    display: none;
+  }
+  .row-mob-solutions{
+    display: block;
+    margin: 10px;
+
+    .mob-solutions-title{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      color: #535353;
+      margin: 20px 0;
+    }
+  }
+
+  .solutions .solutions-img .solutions-img-2 .img-1:nth-child(2n) {
+    margin: 0 10px!important;
+  }
+  .solutions .solutions-img .solutions-img-1 {
+    width: 340px;
   }
 }
 
