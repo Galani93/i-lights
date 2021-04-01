@@ -13,25 +13,59 @@ $(function(){
     });
 
 });
-const allRanges = document.querySelectorAll(".range-wrap");
-allRanges.forEach(wrap => {
-    const range = wrap.querySelector(".range");
-    const bubble = wrap.querySelector(".bubble");
 
-    range.addEventListener("input", () => {
-        setBubble(range, bubble);
-    });
-    setBubble(range, bubble);
-});
+var rangeSlider = document.getElementById("rs-range-line");
+var rangeBullet = document.getElementById("rs-bullet");
 
-function setBubble(range, bubble) {
-    const val = range.value;
-    const min = range.min ? range.min : 0;
-    const max = range.max ? range.max : 100;
-    const newVal = Number(((val - min) * 100) / (max - min));
-    bubble.innerHTML = val;
+rangeSlider.addEventListener("input", showSliderValue, false);
+
+function showSliderValue() {
+    rangeBullet.innerHTML = rangeSlider.value;
+    var bulletPosition = (rangeSlider.value /rangeSlider.max);
+    rangeBullet.style.left = (bulletPosition * 432) + "px";
+
 
 }
+
+
+var rangeSlider1 = document.getElementById("rs-range-line-1");
+var rangeBullet1 = document.getElementById("rs-bullet-1");
+
+rangeSlider.addEventListener("input", showSliderValue, false);
+
+function showSliderValue1() {
+    rangeBullet.innerHTML = rangeSlider.value;
+    var bulletPosition = (rangeSlider.value /rangeSlider.max);
+    rangeBullet.style.left = (bulletPosition * 53820) + "px";
+
+}
+
+var rangeSlider2 = document.getElementById("rs-range-line-2");
+var rangeBullet2 = document.getElementById("rs-bullet-2");
+
+rangeSlider.addEventListener("input", showSliderValue, false);
+
+function showSliderValue2() {
+    rangeBullet.innerHTML = rangeSlider.value;
+    var bulletPosition = (rangeSlider.value /rangeSlider.max);
+    rangeBullet.style.left = (bulletPosition * 160) + "px";
+
+}
+var rangeSlider3 = document.getElementById("rs-range-line-3");
+var rangeBullet3 = document.getElementById("rs-bullet-3");
+
+rangeSlider.addEventListener("input", showSliderValue, false);
+
+function showSliderValue3() {
+    rangeBullet.innerHTML = rangeSlider.value;
+    var bulletPosition = (rangeSlider.value /rangeSlider.max);
+    rangeBullet.style.left = (bulletPosition * 10575) + "px";
+
+}
+
+
+
+
 (function($){
     $('#thumbcarousel').carousel(0);
     var $thumbItems = $('#thumbcarousel .item');
@@ -53,3 +87,4 @@ function setBubble(range, bubble) {
         }
     });
 })(jQuery);
+
