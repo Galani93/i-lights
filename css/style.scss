@@ -1699,6 +1699,7 @@ ul.nav.nav-pills.nav-justified {
 
 }
 
+/*******************************     Delivery   ***********************/
 .bd-delivery {
   background-color: rgb(252, 252, 252);
 }
@@ -1785,6 +1786,28 @@ ul.nav.nav-pills.nav-justified {
     text-decoration: underline !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .card-product {
   .carousel {
@@ -2362,6 +2385,77 @@ ul.nav.nav-pills.nav-justified {
   .solutions .solutions-img .solutions-img-1 {
     width: 340px;
   }
+  /*************** Card Product *******************/
+  .delivery {
+
+    .activity {
+      flex-direction: column;
+
+      .activity-info {
+        display: flex;
+        align-items: flex-start;
+        padding: 0;
+        margin: 24px 0;
+
+        .text_muted {
+          padding: 0;
+          margin: 0 10px !important;
+        }
+      }
+
+    }
+
+    ul.nav.nav-pills.nav-justified a.nav-link {
+      padding: 0 10px;
+
+
+      .arrow-mob {
+        display: block;
+        float: right;
+        color: $color-2;
+        font-size: 16px;
+      }
+    }
+
+
+
+    .activity-info-form {
+      padding: 0 !important;
+
+      .btn-submit {
+        width: 100% !important;
+        margin: 0 !important;
+
+      }
+    }
+
+  }
+
+  .delivery .icon-info-activity-2:before {
+    content: "";
+    height: 110px;
+    border-right: 1px dashed #C4C4C4;
+    position: absolute;
+    color: #C4C4C4;
+    width: 1px;
+    top: -120px;
+    left: 22px;
+    background: #C4C4C4;
+  }
+
+  .delivery .icon-info-activity-2:after {
+    content: "";
+    height: 50px;
+    border-right: 1px dashed #C4C4C4;
+    position: absolute;
+    color: #C4C4C4;
+    top: 57px;
+    width: 1px;
+    right: 0;
+    left: 23px;
+    background: #C4C4C4;
+  }
+
 }
 
 
