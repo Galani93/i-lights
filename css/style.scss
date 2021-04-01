@@ -473,7 +473,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     }
   }
 }
-
+.title-services{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  color: #535353;
+}
 .section-services {
 
 
@@ -969,6 +975,12 @@ ul.nav.nav-pills.nav-justified {
       height: 316px;
       background: rgba(0, 0, 0, 0.9);
       margin-bottom: 20px;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     .solutions-img-2{
       display: flex;
@@ -977,7 +989,12 @@ ul.nav.nav-pills.nav-justified {
       .img-1{
         width: 306px;
         height: 148px;
-        background: rgba(117, 63, 63, 0.9);
+
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
 
         &:nth-child(2n){
           margin: 0 20px;
@@ -1677,7 +1694,7 @@ ul.nav.nav-pills.nav-justified {
     flex-direction: column-reverse;
 
     div#carouselExampleCaptions, .carousel-inner {
-      height: 222px;
+      height: auto;
     }
 
     .carousel-indicators {
@@ -1743,13 +1760,56 @@ ul.nav.nav-pills.nav-justified {
         .item-list {
           display: none;
         }
+
+        .item-title {
+          font-weight: 500;
+          font-size: 11px;
+          line-height: 18px;
+        }
+        .price {
+          padding: 10px 0 20px;
+          font-size: 14px;
+          line-height: 21px;
+        }
+
+      }
+      .details{
+        display: flex;
+        height: 37px!important;
+
+        .plus-btn {
+          font-size: 14px;
+          line-height: 37px;
+          height: 100%;
+
+        }
+        .details-btn a {
+          font-size: 14px;
+          line-height: 37px;
+        }
+
       }
       .item {
-        margin: 10px!important;
+        margin: 10px 0!important;
       }
 
       .details .details-btn a {
         padding: 0 15px;
+      }
+      .item-img {
+        width: 100%;
+        height: 146px;
+
+        img.item-2 {
+          width: 68px;
+          height: 96px;
+        }
+        .day {
+          font-size: 14px;
+          line-height: 22px;
+          width: 36px;
+          height: 20px;
+        }
       }
     }
     .catalog .item {
@@ -1759,10 +1819,15 @@ ul.nav.nav-pills.nav-justified {
       margin: 10px 0;
       width: 48%;
     }
+
     .section-files-title, .section-questions-title{
       background: none;
-      height: 20px;
       width: 100%;
+      padding: 0 10px;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 24px;
+      height: auto;
     }
     .section-files , .section-questions {
       display: flex;
@@ -1775,6 +1840,9 @@ ul.nav.nav-pills.nav-justified {
      line-height: 22px;
      margin-left: 0;
      width: 100%;
+     font-weight: 800;
+     font-size: 18px;
+
 
    }
     .section-files-title h2 {
@@ -1784,16 +1852,39 @@ ul.nav.nav-pills.nav-justified {
       .download-text ,  .look{
         display: none;
       }
-    .catalog-files .row {
-      margin: 10px 0;
-      padding: 5px 0;
+
+    .catalog-files {
+      padding: 10px 10px 60px;
+
+      .row {
+        margin: 0 0;
+        padding: 7px 0;
+        border: 0;
+      }
+
+      .title-files {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 26px;
+
+        &:hover {
+          color: $color-2;
+          text-decoration: underline;
+        }
+      }
+
     }
     .catalog-questions {
       margin-top: 10px;
+
       .form-group {
         width: 100%;
         margin: 0;
-        padding: 35px 0 0;
+      }
+      .form-control {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
       }
       .btn {
         width: 100%;
@@ -1818,7 +1909,10 @@ ul.nav.nav-pills.nav-justified {
         align-items: center;
 
         .footer-item a {
-          margin: 0 20px;
+          margin: 0 10px;
+        }
+        .footer-item {
+          margin: 6px 0;
         }
       }
 
@@ -1845,6 +1939,7 @@ ul.nav.nav-pills.nav-justified {
         line-height: 18px;
         font-size: 14px;
         display: flex;
+        align-items: center;
       }
 
       .services {
@@ -1881,6 +1976,62 @@ ul.nav.nav-pills.nav-justified {
       padding: 0 10px;
     }
 
+
+    .section-banner div#carouselExampleCaptions {
+      padding: 0 10px;
+
+      .carousel-inner {
+        height: 127px;
+      }
+
+      .section-slider-text {
+        margin: 42px 10px;
+        position: relative;
+
+        .h3-section-title {
+          color: #535353;
+          font-weight: 800;
+          font-size: 24px;
+          line-height: 32px;
+        }
+
+      }
+      .carousel img {
+        object-fit: cover;
+      }
+
+    }
+
+    .left-catalog .card-header {
+      padding: 15px;
+    }
+    .section-catalog .section-title, .section-services .section-title, .section-new-items .section-title {
+      position: relative;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    .section-services{
+      .card-header {
+        padding: .75rem 0;
+        border-bottom: 0;
+      }
+      .card-title {
+        margin-bottom:0;
+
+        .services {
+          margin-right: 0;
+          padding-right: 20px;
+        }
+      }
+
+
+
+
+
+
+
+    }
 
   }
 
