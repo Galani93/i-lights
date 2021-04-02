@@ -585,7 +585,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       max-width: 257px;
       text-align: center;
       height: auto;
-      min-height: 11rem;
+      min-height: 2rem;
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;
@@ -1556,8 +1556,14 @@ ul.nav.nav-pills.nav-justified {
   width: 100%;
   height: 175px;
   background: #FFFFFF;
-  box-shadow: 0 4px 10px rgba(243, 168, 0, 0.2);
   margin: 15px 0;
+  border: 1px solid #E5E5E5;
+  transition: all 0.3s;
+
+  &:hover {
+    border:0 ;
+    box-shadow: 0 4px 10px rgba(243, 168, 0, 0.2);
+  }
 }
 
 .product {
@@ -1565,14 +1571,16 @@ ul.nav.nav-pills.nav-justified {
   font-size: 14px;
   line-height: 40px;
   color: #000000;
-
 }
-
+.selected-info-mob.col-lg-4 {
+  display: flex;
+  justify-content: space-between;
+}
 .selected-icon {
+
   img {
     width: 82px;
     height: 82px;
-
 
   }
 }
@@ -1585,7 +1593,14 @@ ul.nav.nav-pills.nav-justified {
   }
 
 }
+.closed{
+  display: none;
+}
+.selected-info {
+  display: flex;
 
+  width: 90%;
+}
 .description {
   margin-top: 15px;
 
@@ -1614,7 +1629,9 @@ ul.nav.nav-pills.nav-justified {
 }
 
 .selected-quantity {
+
   .input-group {
+
     .plusminus {
       width: 24px;
       height: 25px;
@@ -1662,6 +1679,18 @@ ul.nav.nav-pills.nav-justified {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn.post {
   width: 313px;
@@ -2549,6 +2578,7 @@ ul.nav.nav-pills.nav-justified {
   .selected-name {
     display: flex;
     flex-direction: column;
+    position: relative;
 
     .sel-item {
       display: flex;
@@ -2575,7 +2605,10 @@ ul.nav.nav-pills.nav-justified {
     align-items: flex-start;
     border-top: 1px solid #E5E5E5;
     padding: 15px 0;
-
+  }
+  .selected-info {
+    flex-direction: column;
+  }
     .input-group .number {
       width: 25px;
     }
@@ -2587,6 +2620,34 @@ ul.nav.nav-pills.nav-justified {
     .selected-dram span {
       line-height: 14px;
     }
+
+  .selected-info-mob {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid #E5E5E5;
+    padding: 15px;
+  }
+  .selected-close{
+    display: none;
+  }
+  .closed {
+    display: block;
+    position: absolute;
+    right: 20px;
+    float: right;
+    top: 0;
+
+    .fa-times {
+      color: $color-2;
+      font-size: 18px;
+    }
+  }
+  .modal-btn{
+   justify-content: center!important;
+  }
+  .total {
+    margin-right: 10px;
   }
 }
 

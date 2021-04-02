@@ -567,7 +567,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   max-width: 257px;
   text-align: center;
   height: auto;
-  min-height: 11rem;
+  min-height: 2rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -1385,8 +1385,13 @@ ul.nav.nav-pills.nav-justified {
   width: 100%;
   height: 175px;
   background: #FFFFFF;
-  box-shadow: 0 4px 10px rgba(243, 168, 0, 0.2);
   margin: 15px 0;
+  border: 1px solid #E5E5E5;
+  transition: all 0.3s;
+}
+.sel-item-1:hover {
+  border: 0;
+  box-shadow: 0 4px 10px rgba(243, 168, 0, 0.2);
 }
 
 .product {
@@ -1394,6 +1399,11 @@ ul.nav.nav-pills.nav-justified {
   font-size: 14px;
   line-height: 40px;
   color: #000000;
+}
+
+.selected-info-mob.col-lg-4 {
+  display: flex;
+  justify-content: space-between;
 }
 
 .selected-icon img {
@@ -1405,6 +1415,15 @@ ul.nav.nav-pills.nav-justified {
   font-weight: bold;
   font-size: 16px;
   color: #535353;
+}
+
+.closed {
+  display: none;
+}
+
+.selected-info {
+  display: flex;
+  width: 90%;
 }
 
 .description {
@@ -2201,6 +2220,7 @@ ul.nav.nav-pills.nav-justified {
   .selected-name {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   .selected-name .sel-item {
     display: flex;
@@ -2228,14 +2248,53 @@ ul.nav.nav-pills.nav-justified {
     border-top: 1px solid #E5E5E5;
     padding: 15px 0;
   }
-  .sel-quant-dram .input-group .number {
+
+  .selected-info {
+    flex-direction: column;
+  }
+
+  .input-group .number {
     width: 25px;
   }
-  .sel-quant-dram .stock {
+
+  .stock {
     font-size: 10px;
   }
-  .sel-quant-dram .selected-dram span {
+
+  .selected-dram span {
     line-height: 14px;
+  }
+
+  .selected-info-mob {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid #E5E5E5;
+    padding: 15px;
+  }
+
+  .selected-close {
+    display: none;
+  }
+
+  .closed {
+    display: block;
+    position: absolute;
+    right: 20px;
+    float: right;
+    top: 0;
+  }
+  .closed .fa-times {
+    color: #FFC94F;
+    font-size: 18px;
+  }
+
+  .modal-btn {
+    justify-content: center !important;
+  }
+
+  .total {
+    margin-right: 10px;
   }
 }
 
