@@ -1348,6 +1348,10 @@ ul.nav.nav-pills.nav-justified {
   color: #FFC94F;
 }
 
+#main {
+  display: none;
+}
+
 .table-bloc .header-title {
   font-weight: bold;
   font-size: 16px;
@@ -2336,6 +2340,96 @@ ul.nav.nav-pills.nav-justified {
   }
   .modifications-bloc .criteria-name {
     width: 40%;
+  }
+
+  table#datatable {
+    display: none;
+  }
+
+  #main {
+    display: block;
+    margin: 50px 0;
+  }
+  #main #main #faq .card {
+    border: 0;
+  }
+  #main .card:nth-child(2n+1) {
+    background-color: #F9F9F9;
+  }
+  #main .card .card-header {
+    border: 0;
+    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    border-radius: 2px;
+    padding: 0;
+  }
+  #main .card .card-header .btn-header-link {
+    display: block;
+    text-align: left;
+    background: #FFFFFF;
+    color: #222;
+    padding: 20px;
+  }
+  #main .card .card-header .btn-header-link:after {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    float: right;
+  }
+  #main .card .card-header .btn-header-link.collapsed {
+    font-size: 14px;
+    line-height: 17px;
+    color: #535353;
+  }
+  #main .card .card-header .btn-header-link.collapsed:after {
+    content: "";
+  }
+  #main .card .collapsing {
+    background: transparent;
+    line-height: 30px;
+  }
+  #main .card .collapse {
+    border: 0;
+  }
+  #main .card .collapse.show {
+    background: transparent;
+    line-height: 30px;
+    color: #222;
+  }
+  #main .accordion > .card {
+    overflow: hidden;
+    border: 0;
+  }
+  #main .table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: flex;
+  }
+  #main .table .table-bordered thead td, #main .table .table-bordered thead th {
+    border: 0;
+    text-align: left;
+  }
+  #main .table tbody tr {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+  }
+  #main .table thead {
+    background: transparent;
+  }
+  #main .table thead tr {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+  }
+  #main .table td, #main .table th {
+    border: 0 !important;
+    text-align: left;
+  }
+  #main .table thead th {
+    border: 0 !important;
+    text-align: left;
   }
 }
 
