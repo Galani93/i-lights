@@ -1489,7 +1489,7 @@ ul.nav.nav-pills.nav-justified {
 }
 
 
-#main{
+#main {
   display: none;
 }
 
@@ -2476,6 +2476,7 @@ ul.nav.nav-pills.nav-justified {
 
     ul.nav.nav-pills.nav-justified a.nav-link {
       padding: 0 10px;
+
       .arrow-mob {
         display: block;
         float: right;
@@ -2657,7 +2658,7 @@ ul.nav.nav-pills.nav-justified {
       border: 0;
     }
 
-    .card:nth-child(2n + 1){
+    .card:nth-child(2n + 1) {
       background-color: #F9F9F9;
     }
 
@@ -2705,11 +2706,12 @@ ul.nav.nav-pills.nav-justified {
     }
 
     .card .collapse.show {
-      background:transparent;
+      background: transparent;
       line-height: 30px;
       color: #222;
     }
-    .accordion>.card {
+
+    .accordion > .card {
       overflow: hidden;
       border: 0;
     }
@@ -2727,25 +2729,29 @@ ul.nav.nav-pills.nav-justified {
 
     }
 
-    .table tbody tr{
-       display: flex;
-       flex-direction: column;
-       border: 0;
-     }
-    .table thead{
+    .table tbody tr {
+      display: flex;
+      flex-direction: column;
+      border: 0;
+    }
+
+    .table thead {
       background: transparent;
     }
+
     .table thead tr {
       display: flex;
       flex-direction: column;
       border: 0;
     }
+
     .table td, .table th {
-      border: 0!important;
+      border: 0 !important;
       text-align: left;
     }
+
     .table thead th {
-      border: 0!important;
+      border: 0 !important;
       text-align: left;
     }
 
