@@ -2011,6 +2011,7 @@ ul.nav.nav-pills.nav-justified {
   ul.nav.nav-pills.nav-justified a.nav-link {
     text-align: left;
     border-bottom: 1px solid #EDEDED;
+    padding: 3px 10px;
   }
 
   .tab-pane {
@@ -2295,6 +2296,46 @@ ul.nav.nav-pills.nav-justified {
 
   .total {
     margin-right: 10px;
+  }
+
+  .card-product ol.carousel-indicators.list-inline {
+    display: flex;
+    flex-direction: unset;
+  }
+  .card-product div#custCarousel {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .card-product .carousel-control-prev, .card-product .carousel-control-next {
+    display: none;
+  }
+  .card-product .mod-btn {
+    width: 100%;
+  }
+  .card-product .mod-btn a {
+    font-size: 14px;
+  }
+  .card-product .page-title-box {
+    margin: 0;
+  }
+  .card-product .page-title-box h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  ul.item-list {
+    margin: 0 10px;
+  }
+
+  .table-bloc .header-title span {
+    display: none;
+  }
+
+  .modifications-bloc .criteria {
+    width: 60%;
+  }
+  .modifications-bloc .criteria-name {
+    width: 40%;
   }
 }
 
