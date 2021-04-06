@@ -245,6 +245,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   align-items: center;
 }
 
+img.slide {
+  vertical-align: top;
+  width: 100%;
+  height: 448px;
+  object-fit: cover;
+}
+
 .section-slider-text {
   margin-left: 319px;
   margin-right: 55px;
@@ -456,12 +463,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   position: relative;
   width: 305px;
   height: 461px;
-  background: rgba(0, 0, 0, 0.9);
+}
+.right-catalog .bloc-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .right-catalog .bloc-2 {
   position: relative;
   width: 305px;
   margin: 0 18px;
+}
+.right-catalog .bloc-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .right-catalog .bloc-01 {
   position: relative;
@@ -471,6 +487,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .right-catalog .bloc-01:first-child {
   margin-bottom: 18px;
+}
+.right-catalog .bloc-01 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .right-catalog .bloc-info {
   width: 204px;
